@@ -24,7 +24,6 @@ public class HelloWorldChef {
             System.err.println("File " + f.getName() + " not found");
             return null;
         }
-
         StringBuilder buffer = new StringBuilder();
         byte[] bytes = new byte[1024];
         int readBytesCount = 0;
