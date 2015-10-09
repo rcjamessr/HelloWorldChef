@@ -8,10 +8,11 @@ public class HelloWorldChef {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Hello World of Chef");
-		System.out.println("This is version 2.1");
+		System.out.println("This is version 2.2");
 		String current = new File( "." ).getAbsolutePath();
+		System.out.println(current);
 		current = current.subSequence(0,current.length()-1).toString();
-		String path = current + "src/helloworld.conf";
+		String path = current + "helloworld.conf";
 		String[] attr = readFile(path).split(":");
 		System.out.println(attr[1]);
 		
